@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Node এর জন্য latest JS syntax
+    "module": "NodeNext", // ESM-compatible module system
+    "strict": true, // সব strict type checking চালু
+    "esModuleInterop": true, // CommonJS modules import সহজ
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, // node_modules type check বাদ
+    "isolatedModules": true, // ts-node / babel জন্য safe
+    "sourceMap": true, // debugging এর জন্য
+    "declaration": true, // type definitions বানাবে
+    "declarationMap": true
+  },
+  "include": ["**/*.ts"], // সব ts ফাইল কম্পাইল হবে
+  "exclude": ["node_modules", "dist"] // node_modules ও dist ফোল্ডার বাদ
+}
